@@ -105,13 +105,18 @@ npm run format
 Here’s a basic example of how to test the register endpoint:
 
 ```javascript
-import { postRegister } from './support/endpoints/register.js'
-import { registerRequestBody } from './fixtures/requestBody/registerRequestBody.js'
+import { postRegister } from '../support/endpoints/register.js'
+import { registerRequestBody } from '../fixtures/requestBody/register.js'
 
-const requestBody = registerRequestBody(process.env.EMAIL, process.env.PASSWORD)
-const response = await postRegister(requestBody)
-expect(response.statusCode).to.be.equal(200)
-joi.assert(response.body, registerSchema)
+describe('Register - Validations', function () {
+  it('Register a user', async function () {
+    const body = registerRequestBody(process.env.EMAIL, process.env.PASSWORD)
+    const response = await postRegister(body)
+
+    expect(response.statusCode).to.be.equal(200)
+    joi.assert(response.body, registerSchema)
+  })
+})
 ```
 
 To run the API tests, use the command:
