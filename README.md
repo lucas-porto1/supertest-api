@@ -40,6 +40,7 @@ PASSWORD=securePassword123
 ```
 
 2. Ensure that the .env file is listed in .gitignore to protect sensitive information.
+**Note**: The `.env` file in this repository includes sample credentials to facilitate smooth testing and setup. Ensure that sensitive credentials are replaced with secure values in production environments and avoid committing any sensitive information in live applications.
 
 ## Project Structure
 
@@ -69,9 +70,9 @@ supertest-api/
 
 ## Folder Descriptions
 
-- fixtures/: Contains simulated data for requests (requestBody) and expected responses (responseBody).
-- support/: Includes endpoints for API call functions and helpers for utility functions.
-- test/: The main folder for API tests.
+- **fixtures**/: Contains simulated data for requests (requestBody) and expected responses (responseBody).
+- **support**/: Includes endpoints for API call functions and helpers for utility functions.
+- **test**/: The main folder for API tests.
 
 ## Available Scripts
 
@@ -80,7 +81,7 @@ supertest-api/
 
 ## Using Prettier
 
-Prettier is used to ensure consistent and readable code. It is configured in the .prettierrc file with the following settings:
+**Prettier** is used to ensure consistent and readable code. It is configured in the .prettierrc file with the following settings:
 
 ```json
 {
