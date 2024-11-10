@@ -1,0 +1,20 @@
+{
+  "name": "supertest-api",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "mocha",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "chai": "^5.1.2",
+    "dotenv": "^16.4.5",
+    "joi": "^17.13.3",
+    "mocha": "^10.8.2",
+    "supertest": "^7.0.0",
+    "supertest-api": "file:"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  }
+}
