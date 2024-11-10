@@ -40,7 +40,7 @@ PASSWORD=securePassword123
 ```
 
 2. Ensure that the .env file is listed in .gitignore to protect sensitive information.
-**Note**: The `.env` file in this repository includes sample credentials to facilitate smooth testing and setup. Ensure that sensitive credentials are replaced with secure values in production environments and avoid committing any sensitive information in live applications.
+   **Note**: The `.env` file in this repository includes sample credentials to facilitate smooth testing and setup. Ensure that sensitive credentials are replaced with secure values in production environments and avoid committing any sensitive information in live applications.
 
 ## Project Structure
 
